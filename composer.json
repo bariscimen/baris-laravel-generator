@@ -17,5 +17,5 @@
       "Baris\\Generator\\": "vendor/baris-laravel-generator/src/"
     }
   },
-  "minimum-stability": "dev"
+  "minimum-stability": "stable"
 }
