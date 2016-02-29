@@ -9,7 +9,7 @@ use Illuminate\Support\Facades\Storage;
 use Symfony\Component\Console\Input\InputArgument;
 use Symfony\Component\Console\Input\InputOption;
 
-class MakeModelsCommand extends Command
+class MakeModelsCommand extends GeneratorCommand
 {
 
     private $tables = [];
@@ -38,6 +38,19 @@ class MakeModelsCommand extends Command
      * @var string
      */
     protected $description = 'This command automatically generates models with its relations according to DB';
+    /**
+     * Default model namespace.
+     *
+     * @var string
+     */
+    protected $namespace = 'Models/';
+
+    /**
+     * Default class the model extends.
+     *
+     * @var string
+     */
+    protected $extends = 'Illuminate\Database\Eloquent\Model';
 
     public function relation_maker($model_name, $relation_type){
         return

@@ -1,21 +1,21 @@
 {
   "name": "bariscimen/baris-laravel-generator",
   "description": "Laravel 5 model generator from existing database schema",
-  "keywords": ["laravel", "model", "relation", "schema", "generator"],
-  "license": "MIT",
-  "authors": [
-    {
-      "name": "Barış Çimen",
-      "email": "barisc@bariscimen.com"
-    }
-  ],
   "require": {
     "php": ">=5.4.0",
     "illuminate/support": "~5.0"
   },
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Baris Cimen",
+      "email": "barisc@bariscimen.com"
+    }
+  ],
   "autoload": {
     "psr-4": {
-      "Baris\\Generator\\": "src/"
+      "Baris\\Generator\\": "vendor/baris-laravel-generator/src/"
     }
-  }
+  },
+  "minimum-stability": "dev"
 }
