@@ -1,4 +1,4 @@
-# Laravel Model generator v0.1
+# Laravel Model Generator v1
 Laravel 5 model generator for an existing database schema. 
 
 It connects to existing database and generates model class files with relations based on the existing tables.
