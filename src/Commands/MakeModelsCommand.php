@@ -82,7 +82,7 @@ class MakeModelsCommand extends GeneratorCommand
             if (isset($this->fillable[$model])) {
                 $tmp = null;
                 foreach ($this->fillable[$model] as $item) {
-                    if($item == 'created_at' || $item == 'created_at' || $item == 'created_at')
+                    if($item == 'created_at' || $item == 'deleted_at' || $item == 'updated_at')
                         continue;
                     if ($tmp == null)
                         $tmp = "'" . $item . "'";
