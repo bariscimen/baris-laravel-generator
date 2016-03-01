@@ -36,7 +36,7 @@ class Room extends Model
 
 	public $timestamps = true;
 
-	public $fillable = ['name', 'slug', 'building_id', 'created_at', 'updated_at'];
+	public $fillable = ['name', 'slug', 'building_id'];
 
 	public $guarded = ['id'];
     
